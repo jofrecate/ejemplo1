@@ -1,0 +1,87 @@
+ /* Estilo general */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        background-color: #f2f2f2;
+    }
+
+    form {
+        width: 90%;
+        max-width: 500px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+         h1 { text-align: center;
+        color:#333;
+
+      }
+
+
+    fieldset {
+        border-style: solid;
+        margin-bottom: 15px;
+         display: flex;/*hace que los elementos hijos se distribuyan en una fila (por defecto).*/
+         justify-content: flex-start; /* Para alinear los elementos hacia la izquierda */
+         gap: 15px; /* Espacio entre los elementos */
+         flex-wrap: wrap; /* Si los elementos son demasiado grandes para la línea, se moverán a la siguiente línea */
+       }
+    
+   
+    legend {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
+    label {
+        display: block;
+        margin: 8px 0 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    /* Responsividad */
+    @media (max-width: 600px) {
+        form {
+            padding: 15px;
+        }
+    }
